@@ -87,3 +87,16 @@ does not teleport the piece off the board.
 **Rules.** 7-bag randomiser, rotation with wall and floor kicks, lock delay,
 100/300/500/800 line scoring, and a guideline-style gravity curve. No hold
 piece, no T-spins, no combos.
+
+## Disclaimer
+
+The code in this repository was written entirely by an AI coding assistant.
+
+The requirements, feature decisions, design choices and bug reports came from the
+maintainer; the implementation, tests and tooling were produced by the assistant
+iteratively in response to that direction. No lines were written by hand.
+
+It was developed and tested against real hardware — an iPhone 3GS on iOS 6.1.6
+(armv7) and an iPhone 6 on iOS 9.2 (arm64) — but that testing was driven by the
+maintainer, who has been the only person to hold the device. Read the code
+before trusting it.
