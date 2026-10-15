@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>VOBG</string>
+	<key>CFBundleExecutable</key>
+	<string>VeryOriginalBlockGame</string>
+	<!-- Icons.
+
+	     One pre-rounded set under the conventional names, for every OS.
+
+	     The art is a full-bleed square, and iOS 6 does no masking of its own, so
+	     an unmasked icon shows as a bare square there. Rounding it with the
+	     superellipse iOS 7+ would have applied anyway means the icon is already
+	     correct on iOS 6, and iOS 7 and later simply mask the (already rounded)
+	     corners again, which is a no-op on a shape that already matches.
+
+	     An earlier attempt kept two sets: square under CFBundleIcons for iOS 7+
+	     and pre-rounded under CFBundleIconFiles for iOS 6. But iOS 6 resolves
+	     icons by conventional filename and ignores a custom list, so it fell back
+	     to the square art and the distinction bought nothing. -->
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon.png</string>
+		<string>Icon@2x.png</string>
+		<string>Icon-72.png</string>
+		<string>Icon-72@2x.png</string>
+		<string>Icon-76.png</string>
+		<string>Icon-76@2x.png</string>
+		<string>Icon-120.png</string>
+		<string>Icon-120@2x.png</string>
+		<string>Icon-167.png</string>
+		<string>Icon-180.png</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.superyosh23.veryoriginalblockgame</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>VeryOriginalBlockGame</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>iPhoneOS</string>
+	</array>
+	<key>MinimumOSVersion</key>
+	<string>6.0</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<!-- Launch screen.
+	     UILaunchStoryboardName, not just UILaunchImages. The legacy
+	     UILaunchImages key only describes fixed-size artwork, so it cannot
+	     express "this app supports every screen size", so iOS letterboxed the
+	     app into a 320x480 band on 16:9 hardware. A launch
+	     storyboard IS the declaration of full-screen support, which is why the
+	     launch images alone were not enough.
+
+	     UILaunchImages is kept alongside it for iOS 6, which predates launch
+	     storyboards and reads that key instead. -->
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UILaunchImages</key>
+	<array>
+		<dict>
+			<key>UILaunchImageFile</key>
+			<string>Default</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 480}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageFile</key>
+			<string>Default-568h</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 568}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageFile</key>
+			<string>Default-667h</string>
+			<key>UILaunchImageSize</key>
+			<string>{375, 667}</string>
+		</dict>
+		<dict>
+			<key>UILaunchImageFile</key>
+			<string>Default-736h</string>
+			<key>UILaunchImageSize</key>
+			<string>{414, 736}</string>
+		</dict>
+	</array>
+</dict>
+</plist>

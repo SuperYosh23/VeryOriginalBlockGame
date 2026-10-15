@@ -1,0 +1,20 @@
+# Theos build tree: sources are compiled into it, nothing here is authored.
+.theos/
+
+# Build output. The .deb is reproduced by `make package`; the IPA is a bundle of
+# it plus the icons, also reproducible.
+packages/
+tests/build/
+*.ipa
+
+# The un-iconified master art. Every PNG in Resources/ is generated from it by
+# tools/make_icons.py, so committing both would duplicate ~5MB of pixels.
+# Drop this line to keep the master art in history.
+newicon.psd
+
+# macOS droppings, in case this repo is ever opened on a Mac.
+.DS_Store
+
+# Python bytecode caches.
+__pycache__/
+*.pyc

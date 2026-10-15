@@ -1,0 +1,8 @@
+Package: com.superyosh23.veryoriginalblockgame
+Name: VeryOriginalBlockGame
+Version: 1.0
+Architecture: iphoneos-arm
+Description: A swipe-controlled falling blocks game for iOS 6 and later.
+Maintainer: superyosh23
+Section: Games
+Depends: firmware (>= 6.0)
