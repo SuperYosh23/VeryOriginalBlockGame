@@ -1,8 +1,9 @@
 Package: com.superyosh23.veryoriginalblockgame
-Name: VeryOriginalBlockGame
+Name: VOBG
 Version: 1.0
 Architecture: iphoneos-arm
-Description: A swipe-controlled falling blocks game for iOS 6 and later.
+Description: A very original idea that I came up with myself.
+ yep mhm I did not take inspiration from a certain gameboy game made by a russian dude
 Maintainer: superyosh23
 Section: Games
 Depends: firmware (>= 6.0)
